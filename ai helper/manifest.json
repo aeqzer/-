@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "AI Помощник для учёбы",
+  "version": "2.0",
+  "description": "Чат-бот помощник для учебы (без fetch ошибок)",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://api.openai.com/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
